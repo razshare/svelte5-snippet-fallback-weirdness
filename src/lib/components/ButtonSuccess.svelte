@@ -1,11 +1,11 @@
 <script>
   /**
    * @typedef Props
-   * @property {import("svelte").Snippet?} children
+   * @property {import("svelte").Snippet|false} children
    */
 
   /** @type {Props} */
-  let { children } = $props()
+  let { children = false } = $props()
 </script>
 
 <button
